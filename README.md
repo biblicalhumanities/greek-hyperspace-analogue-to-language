@@ -86,6 +86,8 @@ The original paper is here:
 
 http://link.springer.com/article/10.3758%2FBF03204766
 
+The citation for the article is:
+
 Lund, Kevin and Burgess, Curt (1996): "Producing high-dimensional
 semantic spaces from lexical co-occurrence", Behavior Research
 Methods, Instruments, & Computers, Vol. 28 Number 2, pp. 203-208.
