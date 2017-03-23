@@ -89,3 +89,9 @@ http://link.springer.com/article/10.3758%2FBF03204766
 Lund, Kevin and Burgess, Curt (1996): "Producing high-dimensional
 semantic spaces from lexical co-occurrence", Behavior Research
 Methods, Instruments, & Computers, Vol. 28 Number 2, pp. 203-208.
+
+
+
+# Whodunnit?
+
+Dr. Ulrik Sandborg-Petersen of Scripture Systems ApS, Denmark, and Aalborg University, Denmark.
