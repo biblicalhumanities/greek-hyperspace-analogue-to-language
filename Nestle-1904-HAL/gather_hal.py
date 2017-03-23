@@ -6,18 +6,7 @@ start_section_re = re.compile(r'^(\d+)\s+=\s+\[\s*$')
 middle_re = re.compile(r'^\s+(\d+)\s+:\s+([\d\.]+)\s+(\d+)\s*$')
 end_section_re = re.compile(r'^\]\s+(\d+)\s*$')
 
-def read_stopwords(infilename):
-    result = set()
-    for line in open(infilename):
-        line = line.strip()
-
-        if line == "":
-            continue
-        else:
-            result.add(int(line))
-
-    return result
-            
+from util import *
 
 def read_HAL(infilename, stopwords_set):
     result = {} # int-strongs -> [(int-strongs, float-score, int-frequency),...]
@@ -59,15 +48,16 @@ def write_HAL(result, outfilename):
             fout.write(u"%d\t%d\t%d\n" % (strongs, related_strongs, frequency))
     fout.close()
 
-def doIt():
-    stopwords_infilename = os.path.join("input_data", "stopwords.strongs.txt")
+def doIt(stopwords_infilename, infilename, outfilename):
     stopwords_set = read_stopwords(stopwords_infilename)
-    result = read_HAL("haltest.out.txt", stopwords_set)
+    result = read_HAL(infilename, stopwords_set)
 
-    outfilename = os.path.join("output_data", "nestle1904.strongs.HAL.txt")
     write_HAL(result, outfilename)
     sys.stderr.write("... Done! Now look in:\n\t%s\n" % outfilename)
 
-
-doIt()
+if __name__ == '__main__':
+    stopwords_infilename = sys.argv[1]
+    infilename = sys.argv[2]
+    outfilename = sys.argv[3]
+    doIt(stopwords_infilename, infilename, outfilename)
         
