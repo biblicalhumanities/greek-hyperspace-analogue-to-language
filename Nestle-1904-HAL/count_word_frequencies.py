@@ -40,7 +40,7 @@ def write_freq_list(freq_list):
         
 
 def doIt():
-    freq_dict = read_freq_dict("nestle1904.strongs.txt")
+    freq_dict = read_freq_dict(os.path.join("input_data", "nestle1904.strongs.txt"))
 
     freq_list = get_freq_list(freq_dict)
 
