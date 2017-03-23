@@ -74,6 +74,13 @@ than one related word (column 2), so the primary key (in relational
 database parlance) is a combination of columns 1 and 2.
 
 
+## Can I see the output somewhere in an easier format?
+
+Yes, you can try to search for any Strong's number here:
+
+http://greeklexicon.org/
+
+
 # Going further
 
 ## Where can I learn more about HAL?
