@@ -87,3 +87,16 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# This project's temporary files
+Nestle-1904-HAL/HALSpace.cxt
+Nestle-1904-HAL/nestle1904_nostopwords
+Nestle-1904-HAL/nestle1904_nostopwords.csv.txt
+Nestle-1904-HAL/nestle1904_nostopwords.out.txt
+Nestle-1904-HAL/nestle1904_strongs
+Nestle-1904-HAL/nestle1904_strongs.csv.txt
+Nestle-1904-HAL/nestle1904_strongs.out.txt
+Nestle-1904-HAL/output_data/nestle1904.nostopwords.txt
+Nestle-1904-HAL/output_data/nestle1904.nostopwords.wordlist.txt
+Nestle-1904-HAL/output_data/nestle1904.strongs.wordlist.txt
+Nestle-1904-HAL/sql.txt
